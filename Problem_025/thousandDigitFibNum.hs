@@ -2,8 +2,11 @@ module ProjectEuler where
 
 main :: IO ()
 main = do
-    let x = findIdxFstTermNDigitsNum 1000 -- take 0.59 sec to find
-    print x
+    let nDigit = 1000
+    let x = findIdxFstTermNDigitsNum nDigit -- take 0.59 sec to find
+    putStr ("The index of first term that contains " 
+            ++ show nDigit 
+            ++ "-digits of Fibonacci seq. is: " ++ show x)
 
 findIdxFstTermNDigitsNum :: Num t => Int -> t
 findIdxFstTermNDigitsNum y = let
