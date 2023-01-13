@@ -1,10 +1,10 @@
 module ProjectEuler where
 
 main :: IO ()
-main = print $ sum $ filter sumOfDigits [10..50000]
+main = print $ sum $ filter sumOfDigits [10 .. 50000]
 
 factorial :: Int -> Int
-factorial n = product [1..n]
+factorial n = product [1 .. n]
 
 digits :: Int -> [Int]
 digits 0 = []
